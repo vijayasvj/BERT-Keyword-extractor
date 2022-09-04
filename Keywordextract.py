@@ -1,3 +1,9 @@
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", keybert])
+
 import pandas as pd
 import streamlit as st
 from keybert import KeyBERT
